@@ -10,22 +10,25 @@ Instructions:
 2. Create a dictionary `city_population` with at least 5 cities and their populations.
 3. Compute:
    - The average temperature.
-   - The maximum and minimum population.
-   - The total population of all cities.
-4. Print your results in a clear, formatted way.
+      - The maximum and minimum population.
+         - The total population of all cities.
+         4. Print your results in a clear, formatted way.
 """
 
-# TODO: Create the datasets - up to you to fill in the data
-temperatures = []
-city_population = {}
+temperatures = [12, 15, 14, 18, 20, 17, 13]
+city_population = {
+    "Riga": 605802,
+    "Daugavpils": 78389,
+    "Liepaja": 66340,
+    "Jelgava": 54693,
+    "Jurmala": 50001,
+}
 
-# TODO: Compute aggregates
-average_temperature = 0
-largest_city = ""
-largest_population = 0
-total_population = 0
+average_temperature = sum(temperatures) / len(temperatures)
+largest_city = max(city_population, key=city_population.get)
+largest_population = max(city_population.values())
+total_population = sum(city_population.values())
 
-# TODO: Print results
 print("Average temperature:", average_temperature)
 print("Largest city:", largest_city, "-", largest_population)
 print("Total population:", total_population)
