@@ -1,0 +1,4 @@
+flight_id,origin,destination,departure_datetime,arrival_datetime,price
+FL100,BER,CDG,2025-11-10 08:00,2025-11-10 10:00,150.00
+FL101,CDG,MAD,2025-11-11 12:00,2025-11-11 14:30,200.00
+FL102,MAD,ATH,2025-11-12 16:00,2025-11-12 19:30,180.00
